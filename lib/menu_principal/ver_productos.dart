@@ -10,11 +10,7 @@ class ProductoService extends GetxController {
 
   Future<void> obtenerProductos() async {
     try {
-<<<<<<< Updated upstream:lib/menu_principal/ver_productos.dart
-      const url = 'http://microtech.icu:6969/allProducts';
-=======
       const url = 'http://microtech.icu:2007/products/allProducts';
->>>>>>> Stashed changes:lib/productos/all_products.dart
       final response = await http.get(Uri.parse(url));
       print('Response status: ${response.statusCode}');
       print('Response body: ${response.body}');
@@ -23,13 +19,8 @@ class ProductoService extends GetxController {
         _productos.clear();
         data.forEach((producto) {
           producto['IMAGE'] =
-<<<<<<< Updated upstream:lib/menu_principal/ver_productos.dart
-              'http://microtech.icu:6969/product/${producto['IMAGE']}';
-          _productos.add(Map<String, dynamic>.from(producto));
-=======
               'http://microtech.icu:2007/product/${producto['IMAGE']}';
           productos.add(Map<String, dynamic>.from(producto));
->>>>>>> Stashed changes:lib/productos/all_products.dart
         });
       } else {
         Get.snackbar('Error', 'No se pudieron cargar los productos.');
@@ -43,11 +34,7 @@ class ProductoService extends GetxController {
 
   Future<void> DeleteProduct(BuildContext context, int codigoProducto) async {
     try {
-<<<<<<< Updated upstream:lib/menu_principal/ver_productos.dart
-      final url = 'http://microtech.icu:6969/product/$codigoProducto';
-=======
       final url = 'http://microtech.icu:2007/products/delete/$codigoProducto';
->>>>>>> Stashed changes:lib/productos/all_products.dart
       final response = await http.delete(Uri.parse(url));
       print('Response status: ${response.statusCode}');
       print('Response body: ${response.body}');
