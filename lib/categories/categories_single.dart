@@ -29,6 +29,7 @@ class _CategoriesSingleState extends State<CategoriesSingle> {
         title: Text(widget.name, style: TextStyle(color: Color(0xFFFAFAFA))),
         centerTitle: true,
         backgroundColor: morado,
+      iconTheme: IconThemeData(color: Colors.white),
       ),
       body: Center(
         child: Card(

@@ -32,11 +32,18 @@ class CarritoPage extends StatelessWidget {
             },
           )),
       bottomNavigationBar: Obx(() => Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Text(
-              'Total de artículos: ${carritoService.productos.length}',
-              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-              textAlign: TextAlign.center,
+            padding: const EdgeInsets.all(12),
+            child: Row( 
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Icon(Icons.shopping_cart, size: 24, color: Color(0xFF09184D)), 
+                SizedBox(width: 8), 
+                Text(
+                  'Total de artículos: ${carritoService.productos.length}',
+                  style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+                  textAlign: TextAlign.center,
+                ),
+              ],
             ),
           )),
     );

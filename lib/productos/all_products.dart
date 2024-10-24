@@ -142,6 +142,7 @@ class VerProductosPage extends StatelessWidget {
         title: Text('Productos', style: TextStyle(color: Color(0xFFFAFAFA))),
         centerTitle: true,
         backgroundColor: Color(0xFF09184D),
+      iconTheme: IconThemeData(color: Colors.white),
       ),
       body: Column(
         children: [

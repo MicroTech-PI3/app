@@ -22,6 +22,7 @@ class DetalleProductoPage extends StatelessWidget {
         ),
         centerTitle: true,
         backgroundColor: morado,
+      iconTheme: IconThemeData(color: Colors.white),
       ),
       body: Center(
         child: Card(

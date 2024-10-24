@@ -61,6 +61,7 @@ class _CategoriesListState extends State<CategoriesList> {
             style: TextStyle(color: Color(0xFFFAFAFA))),
         backgroundColor: const Color(0xFF09184D),
         centerTitle: true,
+      iconTheme: IconThemeData(color: Colors.white),
       ),
       body: Column(
         children: [

@@ -37,6 +37,7 @@ class _SupplierssingleState extends State<Supplierssingle> {
         title: Text('${widget.name} ${widget.lastname}', style: TextStyle(color: Color(0xFFFAFAFA))),
         backgroundColor: morado,
         centerTitle: true,
+      iconTheme: IconThemeData(color: Colors.white),
       ),
       body: Center(
         child: Card(
